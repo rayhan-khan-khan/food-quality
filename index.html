@@ -27,6 +27,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "color": '#FF9F0D',
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body >
     <header style="background-image: url(images/bgimg.png);">
@@ -46,7 +57,7 @@
         <div class="md:navbar-center">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <i class="fa-solid fa-bars text-[#195A00] text-xl"></i>
+              <i class="fa-solid fa-bars text-[#195A00] text-xl -ml-4"></i>
             </div>
             <ul
               tabindex="0"
@@ -70,7 +81,7 @@
             <label class="relative">
               <input
                 type="text"
-                class="py-[10px] pl-4 border border-amber-500 rounded-full"
+                class="py-[10px] pl-4 border border-amber-500 bg-black rounded-full"
                 placeholder="Search..."
               />
               <i
@@ -95,13 +106,104 @@
           <div class="border lg:w-96 lg:h-96  rounded-full lg:flex hidden"></div>
           <div class="flex  md:ml-5">
             <img class="md:w-[300px] lg:w-[400px] absolute z-20 -top-1" src="images/bannerbg (2).png" alt="">
-            <img class="lg:w-64 md:w-32 w-32 absolute lg:-right-10 md:top-0 -top-24 right-5" src="images/image 68 (1).png" alt="">
+            <img class="lg:w-56 md:w-32  w-32 absolute lg:-right-10 md:top-0 -top-24 right-5" src="images/image 68 (1).png" alt="">
           </div>
 
         </div> 
       </section> 
     </header>
-    <main></main>
+    <main  class="bg-black">
+      <main class="max-w-5xl mx-auto p-3">
+        <!-- About us section -->
+        <section class="flex flex-col md:flex-row gap-10 mb-10 mt-64 md:mt-10 text-white">
+          <div class="md:w-1/2 lg:space-y-3 space-y-2">
+            <img src="images/About us.png" alt="">
+            <h1 class="text-4xl font-bold lg:pr-20"><span class="text-[#FF9F0D]">We</span> Create the best
+              foody product
+              </h1>
+              <p class="text-[13px] lg:pr-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-xl"></i>
+                <p class="text-[15px]">Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-xl"></i>
+                <p class="text-[15px]"> Quisque diam pellentesque bibendum non dui volutpat fringilla </p>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-check text-xl"></i>
+                <p class="text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+              <button class="text-sm  py-3 px-8 bg-[#FF9F0D] rounded-full">Read More</button>
+          </div>
+          <div class="md:w-1/2">
+            <img  src="images/Aboutus.png" alt="">
+            <div class="grid grid-cols-2 gap-2 mt-2">
+              <img src="images/1.png" alt="">
+              <img src="images/2.png" alt="">
+            </div>
+          </div>
+        </section>
+        <!-- Food category section -->
+        <section class="mb-10 text-white mt-20">
+          <div class="text-center">
+            <img class="mx-auto mb-2" src="images/Food Category.png" alt="">
+            <h2 class="text-4xl font-bold"><span class="text-color">Ch</span>oose Food Iteam</h2>
+          </div>
+          <div class="grid grid-cols-2 md:flex gap-3 mt-8">
+            <div class="relative">
+              <img src="images/card (2).png" alt="">
+              <div class=" absolute md:top-28 bottom-10 ">
+               
+                <button class="md:px-4 px-2 md:ml-[43px] ml-9 py-1 bg-white text-color font-extrabold rounded">Save 30%</button>
+                <button class="md:px-5 px-2 py-1 mt-2 bg-color text-white font-semibold rounded">Fast Food Dish</button>
+              
+              </div>
+            </div>
+           <div><img src="images/card (1).png" alt=""></div>
+           <div>
+            <img src="images/card (3).png" alt="">
+           
+           </div>
+           <div>
+            <img src="images/card (4).png" alt="">
+           </div>
+          </div>
+        </section>
+        <!-- Why Choose us -->
+        <section class="flex flex-col md:flex-row gap-10 items-center justify-between mb-20 text-white">
+          <div class="md:w-[660px]">
+          
+            <div class="grid md:grid-cols-2 ">
+              <img class="lg:w-[385px] md:h-72" src="images/section (1).png" alt="">
+              <img class="md:h-52  md:mt-[80px] mt-3 mx-auto md:ml-3" src="images/section (2).png" alt="">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mt-3">
+              <img class="lg:h-72 md:h-56 mx-auto" src="images/section (3).png" alt="">
+              <img class="mx-auto" src="images/section (4).png" alt="">
+              <div class="grid grid-cols-2 gap-3 md:grid-cols-1" >
+                <img  src="images/section (5).png" alt="">
+                <img class=""  src="images/section (6).png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- div 2 -->
+          <div class="md:w-[400px]">
+            <img src="images/Why Choose us.png" alt="">
+            <h1 class="text-4xl font-bold"><span class="text-color">Ex</span> ta ordinary taste
+              And Experienced </h1>
+              <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in consequat.</p>
+              <p class="bg-color">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                <path d="M10.6751 21C10.414 20.9994 10.1563 20.9405 9.92103 20.8274C9.68571 20.7144 9.47866 20.5501 9.31506 20.3466C9.15146 20.1432 9.03545 19.9057 8.97554 19.6516C8.91563 19.3975 8.91332 19.1332 8.9688 18.8781C10.3688 12.1406 18.3532 7 28.0001 7C37.6469 7 45.6313 12.1406 47.0313 18.8781C47.0868 19.1332 47.0845 19.3975 47.0246 19.6516C46.9646 19.9057 46.8486 20.1432 46.685 20.3466C46.5214 20.5501 46.3144 20.7144 46.0791 20.8274C45.8438 20.9405 45.5861 20.9994 45.325 21H10.6751Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M45.5 36.75V40.25C45.5 42.1065 44.7625 43.887 43.4497 45.1997C42.137 46.5125 40.3565 47.25 38.5 47.25H17.5C15.6435 47.25 13.863 46.5125 12.5503 45.1997C11.2375 43.887 10.5 42.1065 10.5 40.25V36.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.125 38.5L14.875 35L23.625 38.5L32.375 35L41.125 38.5L49.875 35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.25 28H50.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></p>
+          </div>
+        </section>
+      </main>
+    </main>
     <footer></footer>
   </body>
 </html>
